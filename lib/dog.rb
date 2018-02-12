@@ -61,7 +61,7 @@ class Dog
     if result
        nil
      else
-      self.create(name: name, breed: breed)
+      dog = self.create(name: name, breed: breed)
      end
   end
 
