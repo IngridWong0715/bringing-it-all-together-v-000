@@ -59,7 +59,7 @@ class Dog
     sql = "SELECT * FROM dogs WHERE name = ? AND breed = ?"
     result = DB[:conn].execute(sql, name, breed).first
     if result
-       nil
+       dog = self.new(name: name, breed: breed)
      else
       dog = self.create(name: name, breed: breed)
      end
